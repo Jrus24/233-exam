@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Event Handling Sample</title>
+    <style>
+        body{
+            background-image: linear-gradient(#61d2ee, white, #61d2ee, white );
+            display: flex;
+            margin: 0px;
+            padding: 0px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            color: red;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(240, 231, 183);
+            text-align: center;
+            line-height: 100px;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        .box:hover {
+            background-color: lightcoral;
+        }
+        .parent{
+            display: inline-flex;
+            margin-top: 100px;
+            margin-left: 50px;
+        }
+        header{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header><h1>JavaScript Function</h1></header>
+    <div class="parent">
+    <div class="box" id="cb">Click Me</div>
+    <div class="box" id="bb">Blur Me</div>
+    <div id="chb"><input type="text"></div>
+    <div class="box" id="dbc">Double Click Me</div>
+    <input type="text" id="fii" placeholder="Focus In">
+    <input type="text" id="foi" placeholder="Focus Out">
+    <div class="box" id="movb">Mouse Over</div>
+    <div class="box" id="moob">Mouse Out</div>
+    <div class="box" id="rb">Resize Me</div>
+    <div class="box" id="ab">Animation</div>
+    </div>
+
+    <script>
+       cb.addEventListener('click', () => {
+        cb.style.backgroundColor = "darkcyan";
+    });
+
+    bb.addEventListener('blur', () => {
+        bb.style.backgroundColor = "darkcyan";
+    });
+
+    chb.addEventListener('change', () => {
+        chb.style.backgroundColor = "darkcyan";
+    });
+
+    dbc.addEventListener('dblclick', () => {
+        dbc.style.backgroundColor = "darkcyan";
+    });
+
+    fii.addEventListener('focusin', () => {
+        fii.style.backgroundColor = "darkcyan";
+    });
+
+    foi.addEventListener('focusout', () => {
+        foi.style.backgroundColor = "darkcyan";
+    });
+
+    movb.addEventListener('mouseover', () => {
+        movb.style.backgroundColor = "darkcyan";
+    });
+
+    moob.addEventListener('mouseout', () => {
+        moob.style.backgroundColor = "darkcyan";
+    });
+
+    rb.addEventListener('resize', () => {
+        rb.style.backgroundColor = "darkcyan";
+    });
+
+    ab.addEventListener('animationstart', () => {
+        ab.style.backgroundColor = "darkcyan";
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="stylesheet" content="width=device-width, intial-scale=1.0">
+        <title>Image and Videos</title>
+        <style>
+            body{
+                background-image: url(https://wallpaperaccess.com/full/1122783.jpg);
+                margin: 0px;
+                padding: 0px;
+            }
+            img{
+                width: 300px;
+                height: 250px;
+                border: 5px solid black;
+                border-radius: 8px;
+                display: inline;
+            }
+            .image{
+                margin-top: 75px;
+                margin-left: 250px;
+            }
+            button{
+                font-family: cursive;
+                border-radius: 8px;
+                background-color: darkcyan;
+            }
+            button:hover{
+                transform: scale(1.40);
+            }
+            header{
+                background-color: darkcyan;
+                font-family: cursive;
+                font-size: 48px ;
+                text-align: center;
+            }
+            a{
+                color: white;
+                text-decoration: none;
+            }
+            .video button{
+
+            }
+            .video{
+                display: inline;
+                margin-left: 250px;
+                margin-top: 0px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <a href="SecondPage.html">NEXT PAGE</a>
+        </header>
+        <div class="image">
+            <img id="husky"src="https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2021/10/07143440/Siberian-Husky-puppy-running-in-the-grass.jpg">
+            <button id="button1" >Click me</button>
+            <img id="gold" src="https://www.akc.org/wp-content/uploads/2020/07/Golden-Retriever-puppy-standing-outdoors.jpg">
+            <button id="button2">Click me</button>
+            <img id="lab" src="https://www.thelabradorsite.com/wp-content/uploads/2017/07/When-Do-Dogs-Stop-Growing-LS-long.jpg">
+            <button id="button3">Click me</button>
+        </div>
+        <div class="video">
+            <video id="vid1" src="C:\Users\Jairus\Desktop\Exam 233\videos\vid1.mp4" width="300px" height="300px" autoplay muted></video>
+            <button id="button4" >Click me</button>
+            <video id="vid2" src="C:\Users\Jairus\Desktop\Exam 233\videos\vid 3.mp4" width="300px" height="300px" autoplay muted></video>
+            <button id="button5" >Click me</button>
+            <video id="vid3" src="C:\Users\Jairus\Desktop\Exam 233\videos\vid 5.mp4" width="300px" height="300px" autoplay muted></video>
+            <button id="button6" >Click me</button>
+
+        </div>
+        <script>
+            const button1 = document.getElementById("button1");
+            const button2 = document.getElementById("button2");
+            const button3 = document.getElementById("button3");
+            
+            const button4 = document.getElementById("button4")
+            const button5 = document.getElementById("button5")
+            const button6 = document.getElementById("button6")
+            
+            const huskyImage = document.getElementById("husky");
+            const goldImage = document.getElementById("gold");
+            const labImage = document.getElementById("lab");
+
+            const vid1 = document.getElementById("vid1");
+            const vid2 = document.getElementById("vid2");
+            const vid3 = document.getElementById("vid3");
+    
+            button1.addEventListener("click", function() {            
+                huskyImage.src = "https://cdn.britannica.com/84/232784-050-1769B477/Siberian-Husky-dog.jpg";
+            });
+    
+            button2.addEventListener("click", function() {
+                goldImage.src = "https://www.dailypaws.com/thmb/DQfQglzyKWlVSlsDwKPprF2iMSg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/golden-retriever-177213599-2000-a30830f4d2b24635a5d01b3c5c64b9ef.jpg";
+            });
+    
+            button3.addEventListener("click", function() {
+                labImage.src = "https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcTtm-_OQvq1RVIUTNm1pxjuQahV-bKDcctDy7f01jeEEB2j5aq91woaedugqTNlbdASIobI52UU_wKmB6s";
+            });
+
+
+            button4.addEventListener("click", function() {            
+                vid1.src = "C:\Users\Jairus\Desktop\Exam 233\videos\vid 2.mp4";
+                vid1.load();
+            });
+    
+            button5.addEventListener("click", function() {
+                vid2.src = "C:\Users\Jairus\Desktop\Exam 233\videos\vid 4.mp4";
+                vid2.load();
+            });
+    
+            button6.addEventListener("click", function() {
+                vid3.src = "C:\Users\Jairus\Desktop\Exam 233\videos\vid 6.mp4";
+                vid3.load();
+            });
+        </script>
+    </body>
+</html>
